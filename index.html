@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hi>Theatre Booking Tickets</hi>
+    <br>
+   <form id="seatsavailibilityform" >
+        <Label for="noOfSeats">No. Of Seats Required</Label>
+        <input type="number" id="noOfSeats" name="noOfSeats" min="1" max="20" required>
+        <button  type="submit">Seats Availability</button>
+    </form>
+    <h1>Seats Requirement</h1>
+    <form id="seatsbookingform" >
+        <Label for="startSeat">Start Seat No.</Label>
+        <input type="text" id="startSeat" name="startSeat" placeholder="Row,Coloumn">
+        <Label for="endSeat">End Seat No.</Label>
+        <input type="text" id="endSeat" name="endSeat" placeholder="Row,Coloumn">
+        <button  type="submit">Book Tickets</button>
+        <br>
+        <h4>Names of People</h4>
+    </form>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
